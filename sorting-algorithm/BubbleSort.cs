@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace sorting_algorithm
 {
-    public class CocktailShakerSort
+    public class BubbleSort
     {
         public static List<T> Sort<T>(List<T> list) where T : IComparable<T>
         {
