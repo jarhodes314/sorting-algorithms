@@ -8,10 +8,10 @@ It will implement a variety of algorithms. One is Fisher-Yates shuffle (already 
 * Fisher-Yates shuffle
 * Bubble sort
 * Cocktail shaker sort
-
-## Planned to implement
 * Insertion sort
 * Selection sort
+
+## Planned to implement
 * Shell sort
 * Timsort
 * Heapsort
