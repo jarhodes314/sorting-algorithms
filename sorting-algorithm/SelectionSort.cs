@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace sorting_algorithm
 {
-    public class SelectionSort
+    public class SelectionSort : SortingAlgorithm
     {
-        public static List<T> Sort<T>(List<T> list) where T : IComparable<T>
+        public override List<T> Sort<T>(List<T> list)
         {
             for (int i = 0; i < list.Count; i++)
             {
@@ -28,6 +28,11 @@ namespace sorting_algorithm
             }
 
             return list;
+        }
+
+        public override string ToString()
+        {
+            return "Selection sort";
         }
     }
 }

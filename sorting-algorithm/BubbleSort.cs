@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 namespace sorting_algorithm
 {
-    public class BubbleSort
+    public class BubbleSort : SortingAlgorithm
     {
-        public static List<T> Sort<T>(List<T> list) where T : IComparable<T>
+        public override List<T> Sort<T>(List<T> list)
         {
             bool swapsMade = true;
             var n = list.Count; //number of unsorted items
@@ -29,6 +29,11 @@ namespace sorting_algorithm
             }
 
             return list;
+        }
+
+        public override string ToString()
+        {
+            return "Bubble sort";
         }
     }
 }

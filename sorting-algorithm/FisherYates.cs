@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace sorting_algorithm
 {
-    class FisherYates
+    public class FisherYates
     {
         /* Fisher-Yates is a shuffling algorithm
          * it avoids the bias that more naïve methods

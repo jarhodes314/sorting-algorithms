@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 namespace sorting_algorithm
 {
-    public class CocktailShakerSort
+    public class CocktailShakerSort : SortingAlgorithm
     {
-        public static List<T> Sort<T>(List<T> list) where T : IComparable<T>
+        public override List<T> Sort<T>(List<T> list)
         {
             var swapsMade = true;
             var reversed = false;
@@ -48,6 +48,11 @@ namespace sorting_algorithm
             }
 
             return list;
+        }
+
+        public override string ToString()
+        {
+            return "Cocktail shaker sort";
         }
     }
 }

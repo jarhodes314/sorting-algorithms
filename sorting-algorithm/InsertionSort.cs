@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 namespace sorting_algorithm
 {
-    public class InsertionSort
+    public class InsertionSort : SortingAlgorithm
     {
-        public static List<T> Sort<T>(List<T> list) where T : IComparable<T>
+        public override List<T> Sort<T>(List<T> list)
         {
             for (int i = 1; i < list.Count; i++)
             {
@@ -23,6 +23,11 @@ namespace sorting_algorithm
             }
 
             return list;
+        }
+
+        public override string ToString()
+        {
+            return "Insertion sort";
         }
     }
 }
