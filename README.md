@@ -7,6 +7,7 @@ It will implement a variety of algorithms. One is Fisher-Yates shuffle (already 
 ## Implemented
 * Fisher-Yates shuffle
 * Bubble sort
+* Cocktail shaker sort
 
 ## Planned to implement
 * Insertion sort
