@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace sorting_algorithm
+namespace sorting_algorithms
 {
     public class InsertionSort : SortingAlgorithm
     {
