@@ -4,7 +4,7 @@ namespace RhodesSort.Algorithms
 {
     public class CocktailShakerSort : SortingAlgorithm
     {
-        public override List<T> Sort<T>(List<T> list)
+        public override IList<T> Sort<T>(IList<T> list)
         {
             var swapsMade = true;
             var n = list.Count; //number of unsorted items

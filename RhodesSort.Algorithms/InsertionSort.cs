@@ -4,7 +4,7 @@ namespace RhodesSort.Algorithms
 {
     public class InsertionSort : SortingAlgorithm
     {
-        public override List<T> Sort<T>(List<T> list)
+        public override IList<T> Sort<T>(IList<T> list)
         {
             for (int i = 1; i < list.Count; i++)
             {

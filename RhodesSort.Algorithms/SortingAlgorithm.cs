@@ -7,7 +7,7 @@ namespace RhodesSort.Algorithms
     {
         public abstract override string ToString();
 
-        public abstract List<T> Sort<T>(List<T> list) where T : IComparable<T>;
+        public abstract IList<T> Sort<T>(IList<T> list) where T : IComparable<T>;
     }
 }
 

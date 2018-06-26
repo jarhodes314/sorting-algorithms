@@ -5,7 +5,7 @@ namespace RhodesSort.Algorithms
 {
     public class SelectionSort : SortingAlgorithm
     {
-        public override List<T> Sort<T>(List<T> list)
+        public override IList<T> Sort<T>(IList<T> list)
         {
             for (int i = 0; i < list.Count; i++)
             {

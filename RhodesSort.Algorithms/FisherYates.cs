@@ -13,7 +13,7 @@ namespace RhodesSort.Algorithms
          * in sorting-visualiser
          */
 
-        public static List<T> Shuffle<T>(List<T> list)
+        public static IList<T> Shuffle<T>(IList<T> list)
         {
             // create new pre-seeded (pseudo)random number generator 
             var randomGen = new Random();
