@@ -18,7 +18,7 @@ namespace RhodesSort.Algorithms
             // create new pre-seeded (pseudo)random number generator 
             var randomGen = new Random();
 
-            for (int i = list.Count - 1; i > 0; i++)
+            for (int i = list.Count - 1; i > 0; i--)
             {
                 int j = randomGen.Next(0, i);
                 var temp = list[i];
