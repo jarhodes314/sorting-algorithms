@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace sorting_algorithms
+namespace RhodesSort.Algorithms
 {
     public abstract class SortingAlgorithm
     {

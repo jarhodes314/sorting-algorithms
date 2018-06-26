@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace sorting_algorithms
+namespace RhodesSort.Algorithms
 {
     public class BubbleSort : SortingAlgorithm
     {
