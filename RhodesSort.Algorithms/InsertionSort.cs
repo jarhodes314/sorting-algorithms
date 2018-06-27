@@ -15,7 +15,7 @@ namespace RhodesSort.Algorithms
                     // swap element into correct place
                     var tmp = list[j];
                     list[j] = list[j - 1];
-                    list[j - 1] = list[j];
+                    list[j - 1] = tmp;
 
                     // update j to new position for next swap
                     j--;

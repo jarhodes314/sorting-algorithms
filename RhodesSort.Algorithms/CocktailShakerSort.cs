@@ -27,13 +27,11 @@ namespace RhodesSort.Algorithms
                     }
                 }
 
-                n--;
-
                 // and then do the same, but in the opposite direction
 
-                for (int i = n; i > 0; i++)
+                for (int i = n - 1; i > 0; i--)
                 {
-                    if (list[i].CompareTo(list[i - 1]) > 0)
+                    if (list[i].CompareTo(list[i - 1]) < 0)
                     {
                         // pair out of order -- swap them
                         var tmp = list[i];
@@ -42,8 +40,6 @@ namespace RhodesSort.Algorithms
                         swapsMade = true;
                     }
                 }
-
-                n--;
             }
 
             return list;
