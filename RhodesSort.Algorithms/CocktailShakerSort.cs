@@ -17,12 +17,13 @@ namespace RhodesSort.Algorithms
 
                 for (int i = 0; i < n - 1; i++)
                 {
-                    if (list[i].CompareTo(list[i + 1]) > 0)
+                    T a = list[i];
+                    T b = list[i + 1];
+                    if (a.CompareTo(b) > 0)
                     {
                         // pair out of order -- swap them
-                        var tmp = list[i];
-                        list[i] = list[i + 1];
-                        list[i + 1] = tmp;
+                        list[i] = b;
+                        list[i + 1] = a;
                         swapsMade = true;
                     }
                 }
@@ -31,18 +32,24 @@ namespace RhodesSort.Algorithms
 
                 for (int i = n - 1; i > 0; i--)
                 {
-                    if (list[i].CompareTo(list[i - 1]) < 0)
+                    T a = list[i];
+                    T b = list[i - 1];
+                    if (a.CompareTo(b) < 0)
                     {
                         // pair out of order -- swap them
-                        var tmp = list[i];
-                        list[i] = list[i - 1];
-                        list[i - 1] = tmp;
+                        list[i] = b;
+                        list[i - 1] = a;
                         swapsMade = true;
                     }
                 }
             }
 
             return list;
+        }
+
+        public CocktailShakerSort()
+        {
+            SpeedMultiplier = 12;
         }
 
         public override string ToString()

@@ -5,6 +5,7 @@ namespace RhodesSort.Algorithms
 {
     public class SelectionSort : SortingAlgorithm
     {
+
         public override IList<T> Sort<T>(IList<T> list)
         {
             for (int i = 0; i < list.Count; i++)
@@ -28,6 +29,11 @@ namespace RhodesSort.Algorithms
             }
 
             return list;
+        }
+
+        public SelectionSort()
+        {
+            SpeedMultiplier = 5;
         }
 
         public override string ToString()

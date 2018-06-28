@@ -44,16 +44,22 @@ namespace RhodesSort.Algorithms
                 {
                     Merge<T>(list, i, Math.Min(i + width, list.Count), Math.Min(i + 2 * width, list.Count), space);
                 }
+
+                j = 0;
+                foreach (var item in space)
+                {
+                    Console.Write(item);
+                    list[j++] = item;
+                }
             }
 
-            j = 0;
-            foreach(var item in space)
-            {
-                Console.Write(item);
-                list[j++] = item;
-            }
 
             return list;
+        }
+
+        public MergeSort()
+        {
+            SpeedMultiplier = 1;
         }
 
         public override string ToString()

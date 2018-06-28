@@ -25,6 +25,11 @@ namespace RhodesSort.Algorithms
             return list;
         }
 
+        public InsertionSort()
+        {
+            SpeedMultiplier = 7;
+        }
+
         public override string ToString()
         {
             return "Insertion sort";
